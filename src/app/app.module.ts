@@ -14,6 +14,9 @@ import { LoginPage } from '../pages/login/login';
 import { TabsPage } from '../pages/tabs/tabs';
 import { ProfilePage } from '../pages/profile/profile';
 import { ServiceDetailPage } from '../pages/service-detail/service-detail';
+import { ServiceTaxiPage } from '../pages/service-taxi/service-taxi';
+import { ServiceHotelPage } from '../pages/service-hotel/service-hotel';
+import { ServiceRestaurantPage } from '../pages/service-restaurant/service-restaurant';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -52,7 +55,10 @@ import {ChatService} from "../providers/chat-service";
     ProfilePage,
     AssistantPage,
     ServicesPage,
-    ServiceDetailPage
+    ServiceDetailPage,
+    ServiceTaxiPage,
+    ServiceHotelPage,
+    ServiceRestaurantPage
   ],
   providers: [
     StatusBar,
