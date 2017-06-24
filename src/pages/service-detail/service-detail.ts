@@ -1,28 +1,24 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { ServiceDetailPage } from '../service-detail/service-detail';
 
 /**
- * Generated class for the ServicesPage page.
+ * Generated class for the ServiceDetailPage page.
  *
  * See http://ionicframework.com/docs/components/#navigation for more info
  * on Ionic pages and navigation.
  */
 @IonicPage()
 @Component({
-  selector: 'page-services',
-  templateUrl: 'services.html',
+  selector: 'page-service-detail',
+  templateUrl: 'service-detail.html',
 })
-export class ServicesPage {
+export class ServiceDetailPage {
 
-  itemSelected(item){
-    this.navCtrl.push(ServiceDetailPage);
-  }
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad ServicesPage');
+    console.log('ionViewDidLoad ServiceDetailPage');
   }
 
 }
