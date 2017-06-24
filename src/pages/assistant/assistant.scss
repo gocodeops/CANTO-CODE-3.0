@@ -59,6 +59,9 @@ page-assistant {
                     }
                 }
                 .msg-content {
+                    min-width: 10%;
+                    max-width: 100%;
+                    display: inline-block;
                     position: relative;
                     margin-top: 5px;
                     background-color: #fff;
@@ -79,11 +82,21 @@ page-assistant {
                         transform: rotate(45deg);
                         position: absolute;
                     }
+                    .line-breaker p {
+                        display: inline;
+                    }
                 }
+            }
+            .msg-detail::after {
+                content: "";
+                clear: both;
+                display: table;
             }
         }
         .message.left {
             .msg-content {
+                float: left;
+                text-align: left;
                 background-color: $toUserBackgroundColor;
             }
             .msg-detail {
@@ -121,6 +134,8 @@ page-assistant {
                 top: 50px;
             }
             .msg-content {
+                float: right;
+                text-align: right;
                 background-color: $userBackgroundColor;
                 color: #fff;
                 span.triangle {
