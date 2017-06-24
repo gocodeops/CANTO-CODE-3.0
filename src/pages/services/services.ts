@@ -15,10 +15,13 @@ import { ServiceDetailPage } from '../service-detail/service-detail';
 })
 export class ServicesPage {
 
-  itemSelected(item){
-    this.navCtrl.push(ServiceDetailPage);
-  }
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+
+  }
+
+    itemSelected(item: string){
+      console.log(item);
+    this.navCtrl.push(ServiceDetailPage, { serviceType: item });
   }
 
   ionViewDidLoad() {

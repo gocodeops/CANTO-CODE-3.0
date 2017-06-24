@@ -13,6 +13,7 @@ import { ServicesPage } from '../pages/services/services';
 import { LoginPage } from '../pages/login/login';
 import { TabsPage } from '../pages/tabs/tabs';
 import { ProfilePage } from '../pages/profile/profile';
+import { ServiceDetailPage } from '../pages/service-detail/service-detail';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -28,6 +29,7 @@ import {ChatService} from "../providers/chat-service";
     HomePage,
     AssistantPage,
     ServicesPage,
+    ServiceDetailPage,
     LoginPage,
     TabsPage,
     ProfilePage,
@@ -42,14 +44,15 @@ import {ChatService} from "../providers/chat-service";
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
+    TabsPage,
     AboutPage,
     ContactPage,
     HomePage,
+    LoginPage,
+    ProfilePage,
     AssistantPage,
     ServicesPage,
-    LoginPage,
-    TabsPage,
-    ProfilePage,
+    ServiceDetailPage
   ],
   providers: [
     StatusBar,

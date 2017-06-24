@@ -13,8 +13,15 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'service-detail.html',
 })
 export class ServiceDetailPage {
+    serviceType: string ;
 
+    static get parameters() {
+      return [[NavController], [NavParams]];
+    }
+    
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.serviceType = this.navParams.get('serviceType');
+    console.log(this.navParams);
   }
 
   ionViewDidLoad() {

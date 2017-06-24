@@ -15,7 +15,7 @@
 
 <ion-content>
     <ion-list>
-        <button ion-item (click)="itemSelected(item)">
+        <button ion-item (click)="itemSelected('taxi')">
             <ion-avatar item-start>
                 <img src="../../assets/type-images/taxi.jpg">
             </ion-avatar>
@@ -23,7 +23,7 @@
             <p>Get from here to there</p>
         </button>
 
-        <button ion-item (click)="itemSelected(item)">
+        <button ion-item (click)="itemSelected('hotel')">
             <ion-avatar item-start>
                 <img src="../../assets/type-images/hotel.jpg">
             </ion-avatar>
@@ -31,11 +31,11 @@
             <p>Stay at a place when you're there</p>
         </button>
 
-        <button ion-item (click)="itemSelected(item)">
+        <button ion-item (click)="itemSelected('restaurant')">
             <ion-avatar item-start>
                 <img src="../../assets/type-images/restaurant.jpg">
             </ion-avatar>
-            <h2>Restaurant</h2>
+            <h2>Restaurants</h2>
             <p>Serve yourself a great meal</p>
         </button>
     </ion-list>

@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-import {Component} from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 import { AssistantPage } from './assistant';
 import {ChatService} from "../../providers/chat-service";

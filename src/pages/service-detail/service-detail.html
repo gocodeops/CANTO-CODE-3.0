@@ -7,18 +7,34 @@
 <ion-header>
 
     <ion-navbar>
-        <ion-title>service_detail</ion-title>
+        <ion-title style="text-transform: capitalize">{{serviceType}}</ion-title>
     </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-    <ion-list>
-        <ion-row wrap>
-            <ion-col width-33 *ngFor="let file_uri of images">
-                <img [src]="file_uri">
-            </ion-col>
-        </ion-row>
-    </ion-list>
+    <ion-card>
+        <img src="../../assets/suriname.jpg" />
+        <div class="card-title">São Paulo</div>
+        <div class="card-subtitle">41 Listings</div>
+    </ion-card>
+
+    <ion-card>
+        <img src="../../assets/suriname.jpg" />
+        <div class="card-title">Amsterdam</div>
+        <div class="card-subtitle">64 Listings</div>
+    </ion-card>
+
+    <ion-card>
+        <img src="../../assets/suriname.jpg" />
+        <div class="card-title">San Francisco</div>
+        <div class="card-subtitle">72 Listings</div>
+    </ion-card>
+
+    <ion-card>
+        <img src="../../assets/suriname.jpg" />
+        <div class="card-title">Madison</div>
+        <div class="card-subtitle">28 Listings</div>
+    </ion-card>
 </ion-content>
