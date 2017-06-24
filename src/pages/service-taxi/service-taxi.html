@@ -6,13 +6,41 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>serviceTaxi</ion-title>
-  </ion-navbar>
+    <ion-navbar>
+        <ion-title>serviceTaxi</ion-title>
+    </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-
+    <ion-row>
+        <ion-col>
+            <ion-list>
+                <!--<ion-item>
+                    <ion-label></ion-label>
+                    <ion-input type="text"></ion-input>
+                </ion-item>-->
+                <ion-item>
+                    <ion-label>Destination</ion-label>
+                    <ion-select [(ngModel)]="destination" submitText="Accept" cancelText="Cancel">
+                        <ion-option value="hogestraat">Hogestraat</ion-option>
+                        <ion-option value="wanicastraat">Wanicastraat</ion-option>
+                        <ion-option value="vredenburg">Vredenburg</ion-option>
+                        <ion-option value="domburg">Domburg</ion-option>
+                        <ion-option value="kapurhoutweg">Kapurhoutweg</ion-option>
+                        <ion-option value="achtersteeg">Achtersteeg</ion-option>
+                        <ion-option value="kalkbrandenstraat">Kalkbrandenstraat</ion-option>
+                    </ion-select>
+                </ion-item>
+                <br>
+                <ion-item>
+                    <ion-label>Take my location</ion-label>
+                    <ion-checkbox color="success" checked="true"></ion-checkbox>
+                </ion-item>
+                <br>
+                <button ion-button block class="register-btn" color="danger">Accept</button>
+            </ion-list>
+        </ion-col>
+    </ion-row>
 </ion-content>
