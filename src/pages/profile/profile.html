@@ -12,31 +12,31 @@
 
 </ion-header>
 
-
 <ion-content padding>
-    <ion-list>
 
-        <ion-item>
-            <ion-icon name="person" item-left></ion-icon>
-            <ion-input type="text" placeholder="Firstname"></ion-input>
-        </ion-item>
+    <ion-list no-lines>
+        <form (ngSubmit)="editProfile()" #profileForm="ngForm">
 
-        <ion-item>
-            <ion-icon name="person" item-left></ion-icon>
-            <ion-input type="text" placeholder="Lasname"></ion-input>
-        </ion-item>
+            <ion-item>
+                <ion-icon name="person" item-left></ion-icon>
+                <ion-input [(ngModel)]="profile.firstname" name="firstname" type="text" placeholder="Firstname"></ion-input>
+            </ion-item>
 
-        <ion-item>
-            <ion-icon name="mail" item-left></ion-icon>
-            <ion-input type="email" placeholder="Email"></ion-input>
-        </ion-item>
+            <ion-item>
+                <ion-icon name="person" item-left></ion-icon>
+                <ion-input [(ngModel)]="profile.lastname" name="lastname" type="text" placeholder="Lastname"></ion-input>
+            </ion-item>
 
-        <ion-item>
-            <ion-icon name="call" item-left></ion-icon>
-            <ion-input type="phone" placeholder="Phone"></ion-input>
-        </ion-item>
+            <ion-item>
+                <ion-icon name="mail" item-left></ion-icon>
+                <ion-input [(ngModel)]="profile.email" name="email" type="email" placeholder="Email"></ion-input>
+            </ion-item>
 
-
+            <ion-item>
+                <ion-icon name="call" item-left></ion-icon>
+                <ion-input [(ngModel)]="profile.phone" name="phone" placeholder="Phone"></ion-input>
+            </ion-item>
+        </form>
     </ion-list>
 
     <ion-list>
@@ -47,12 +47,16 @@
 
         <ion-item>
             <ion-icon name="lock" item-left></ion-icon>
-            <ion-input type="password" placeholder="Password"></ion-input>
+            <ion-input [(ngModel)]="profile.password" name="password" type="password" placeholder="Password"></ion-input>
         </ion-item>
 
         <ion-item>
             <ion-icon name="lock" item-left></ion-icon>
-            <ion-input type="password" placeholder="Confirm Password"></ion-input>
+            <ion-input [(ngModel)]="profile.passwordConfirm" name="passwordConfirm" type="password" placeholder="Confirm Password"></ion-input>
         </ion-item>
     </ion-list>
+
+    <button ion-button full color="primary" (click)="submitForm()">Save</button>
+
+    <button ion-button block clear (click)="logout()">Logout</button>
 </ion-content>
