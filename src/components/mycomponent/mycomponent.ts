@@ -25,9 +25,11 @@ export class MycomponentComponent {
   ngAfterViewInit(){
     this.text = this.textToUse;
 
-    let interval = setInterval(() => {
-      this.somethingHappened.emit("its time");
-    }, 3000);
+    for (var index = 0; index < 100; index++) {
+      setTimeout(() => {
+        this.somethingHappened.emit("its time");
+      },5000); 
+    }
 
   }
 

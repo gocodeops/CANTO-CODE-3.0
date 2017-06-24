@@ -1,0 +1,58 @@
+<!--
+  Generated template for the ProfilePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar>
+        <ion-title>Profile</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-list>
+
+        <ion-item>
+            <ion-icon name="person" item-left></ion-icon>
+            <ion-input type="text" placeholder="Firstname"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-icon name="person" item-left></ion-icon>
+            <ion-input type="text" placeholder="Lasname"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-icon name="mail" item-left></ion-icon>
+            <ion-input type="email" placeholder="Email"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-icon name="call" item-left></ion-icon>
+            <ion-input type="phone" placeholder="Phone"></ion-input>
+        </ion-item>
+
+
+    </ion-list>
+
+    <ion-list>
+        <ion-item>
+            <ion-label> Change password</ion-label>
+            <ion-toggle [(ngModel)]="usePassword" checked="false"></ion-toggle>
+        </ion-item>
+
+        <ion-item>
+            <ion-icon name="lock" item-left></ion-icon>
+            <ion-input type="password" placeholder="Password"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-icon name="lock" item-left></ion-icon>
+            <ion-input type="password" placeholder="Confirm Password"></ion-input>
+        </ion-item>
+    </ion-list>
+</ion-content>
