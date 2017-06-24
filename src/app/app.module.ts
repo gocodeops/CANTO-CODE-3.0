@@ -13,7 +13,6 @@ import { ServicesPage } from '../pages/services/services';
 import { LoginPage } from '../pages/login/login';
 import { TabsPage } from '../pages/tabs/tabs';
 import { ProfilePage } from '../pages/profile/profile';
-import { RegisterPage } from '../pages/register/register';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -32,7 +31,6 @@ import {ChatService} from "../providers/chat-service";
     LoginPage,
     TabsPage,
     ProfilePage,
-   RegisterPage,
     MycomponentComponent,
     ProgressBarComponent
   ],
@@ -52,7 +50,6 @@ import {ChatService} from "../providers/chat-service";
     LoginPage,
     TabsPage,
     ProfilePage,
-    RegisterPage
   ],
   providers: [
     StatusBar,

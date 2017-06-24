@@ -123,6 +123,10 @@ export class AssistantPage {
      */
     pushNewMsg(msg: ChatMessage){
          // Verify user relationships
+
+         console.log(msg.userId);
+         console.log(msg.toUserId);
+
         if(msg.userId === this.userId &&  msg.toUserId === this.toUserId){
           this.msgList.push(msg);
         }else if (msg.toUserId === this.userId && msg.userId === this.toUserId){
