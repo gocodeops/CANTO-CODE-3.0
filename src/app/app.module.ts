@@ -4,7 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { HttpModule } from '@angular/http';
 import { MyApp } from './app.component';
-import {HttpModule} from "@angular/http";
 
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
@@ -40,7 +39,6 @@ import {ChatService} from "../providers/chat-service";
   imports: [
     HttpModule,
     BrowserModule,
-    HttpModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
@@ -60,11 +58,8 @@ import {ChatService} from "../providers/chat-service";
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-<<<<<<< HEAD
-    ChatService
-=======
+    ChatService,
     AuthServiceProvider
->>>>>>> 0d5b69497e4d0ceebe48d4e95ac36a62713d2d77
   ]
 })
 export class AppModule {}
