@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { NavController, NavParams } from 'ionic-angular';
+import { FormBuilder, FormGroup } from '@angular/forms';
+import { NavController, NavParams, AlertController, LoadingController, Loading, IonicPage } from 'ionic-angular';
 import { AuthServiceProvider } from '../../providers/auth-service/auth-service';
 
 import { LoginPage } from '../login/login';
@@ -18,6 +18,7 @@ import { LoginPage } from '../login/login';
 })
 export class ProfilePage {
   
+  createSuccess = false;
   
   profile = {
     id: 0,
@@ -26,14 +27,9 @@ export class ProfilePage {
     email: "",
     phone: ""
   }
-
-  pageForm: FormGroup;
- 
-  submitAttempt: boolean = false;
-
   
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public formBuilder: FormBuilder, private auth: AuthServiceProvider) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public formBuilder: FormBuilder, private auth: AuthServiceProvider, private alertCtrl: AlertController, private loadingCtrl: LoadingController) {
     let info = this.auth.getUserInfo();
     this.profile.id = info['id'];
     this.profile.firstname = info['firstname'];
@@ -44,23 +40,45 @@ export class ProfilePage {
 
   public logout() {
     this.auth.logout().subscribe(succ => {
-      this.navCtrl.setRoot('LoginPage')
+      this.navCtrl.setRoot(LoginPage);
     });
+  }
+
+  submitForm(){ 
+    this.auth.updateProfile(this.profile).subscribe(success => {
+      if (success) {
+        this.createSuccess = true;
+        this.showPopup("Success", "Account created.");
+      } else {
+        this.showPopup("Error", "Problem creating account.");
+      }
+    },
+      error => {
+        this.showPopup("Error", error);
+      });
+  }
+
+  showPopup(title, text) {
+    let alert = this.alertCtrl.create({
+      title: title,
+      subTitle: text,
+      buttons: [
+        {
+          text: 'OK',
+          handler: data => {
+            if (this.createSuccess) {
+              this.navCtrl.setRoot(ProfilePage);
+            }
+          }
+        }
+      ]
+    });
+    alert.present();
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ProfilePage');
   }
 
-  submitForm(){
-    this.submitAttempt = true;
- 
-    if(!this.pageForm.valid){
-      console.log("failed!")
-    } 
-    else {
-        console.log("success!")
-    }
-  }
 
 }
