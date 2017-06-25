@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { ServiceDetailPage } from '../service-detail/service-detail';
+import { TicketsPage } from '../tickets/tickets';
 
 /**
  * Generated class for the ServicesPage page.
@@ -21,6 +22,10 @@ export class ServicesPage {
 
     itemSelected(item: string){
     this.navCtrl.push(ServiceDetailPage, { serviceType: item });
+  }
+
+  openTickets(){
+    this.navCtrl.push(TicketsPage)
   }
 
   ionViewDidLoad() {
