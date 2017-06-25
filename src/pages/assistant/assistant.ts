@@ -113,6 +113,7 @@ export class AssistantPage {
                 this.msgList[index].status = 'success';
               }
             })
+          this.scrollToBottom();
         }
       }
       this.endConversation = true;

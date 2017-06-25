@@ -39,7 +39,7 @@ export class ChatService {
               message:msg.message,
               status:'success'
           }, Date.now());
-      },Math.random()*1800)
+      },1000)
   }
 
   getMsgList(): Promise<ChatMessage[]> {
@@ -55,7 +55,7 @@ export class ChatService {
       return new Promise( (resolve,reject) => {
           setTimeout( () =>{
               resolve(msg)
-          },Math.random()*1000)
+          },500)
       }).then(() => {
           this.mockNewMsg(msg)
       })
