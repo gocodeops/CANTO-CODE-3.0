@@ -23,6 +23,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { MycomponentComponent } from '../components/mycomponent/mycomponent';
 import { ProgressBarComponent } from '../components/progress-bar/progress-bar';
 import {ChatService} from "../providers/chat-service";
+import { TicketPage } from '../pages/ticket/ticket';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import {ChatService} from "../providers/chat-service";
     TabsPage,
     ProfilePage,
     MycomponentComponent,
-    ProgressBarComponent
+    ProgressBarComponent,
+    TicketPage
   ],
   imports: [
     HttpModule,
@@ -61,7 +63,8 @@ import {ChatService} from "../providers/chat-service";
     ServiceDetailPage,
     ServiceTaxiPage,
     ServiceHotelPage,
-    ServiceRestaurantPage
+    ServiceRestaurantPage,
+    TicketPage
   ],
   providers: [
     StatusBar,

@@ -21,8 +21,4 @@ export class ServiceHotelPage {
     console.log('ionViewDidLoad ServiceHotelPage');
   }
 
-  createTicket(){
-    
-  }
-
 }

@@ -1,0 +1,38 @@
+<!--
+  Generated template for the TicketHotelPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar>
+        <ion-title>ticketHotel</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="ticket_main">
+    <ion-item-group>
+        <ion-item class="ticket_profile">
+            <ion-avatar item-start>
+                <img src="../assets/user.jpg">
+            </ion-avatar>
+            <h2>Marriott Hotel</h2>
+        </ion-item>
+        <ion-row>
+            <ion-col col-12 class="ticket_summary">Ticket Summary</ion-col>
+        </ion-row>
+        <ion-item>Room
+            <ion-note item-end>$100</ion-note>
+        </ion-item>
+        <br>
+        <br>
+        <ion-item>Total
+            <ion-note item-end>$100</ion-note>
+        </ion-item>
+    </ion-item-group>
+    <button ion-button block class="register-btn knop_ticket" color="danger">Pay</button>
+</ion-content>
+<ion-nav id="nav" #content [root]="rootPage"></ion-nav>

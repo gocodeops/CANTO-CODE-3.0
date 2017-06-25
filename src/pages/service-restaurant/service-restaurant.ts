@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { TicketPage } from '../ticket/ticket';
 
 /**
  * Generated class for the ServiceRestaurantPage page.
@@ -15,6 +16,10 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class ServiceRestaurantPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+  }
+
+  createTicket(){
+    this.navCtrl.push(TicketPage);
   }
 
   ionViewDidLoad() {
