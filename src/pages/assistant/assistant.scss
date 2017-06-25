@@ -97,7 +97,8 @@ page-assistant {
             .msg-content {
                 float: left;
                 text-align: left;
-                background-color: $toUserBackgroundColor;
+                /*background-color: $toUserBackgroundColor;*/
+                background-color: #FFF;
             }
             .msg-detail {
                 padding-right: 60px;
