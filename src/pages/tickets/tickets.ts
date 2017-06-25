@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-import { TicketTaxie } from '../tickettaxie/tickettaxie';
-import { TicketHotel } from '../ticket-hotel/ticket-hotel';
-import { TicketRestaurant } from '../ticket/ticket';
+import { TickettaxiePage } from '../tickettaxie/tickettaxie';
+import { TicketHotelPage } from '../ticket-hotel/ticket-hotel';
+import { TicketPage } from '../ticket/ticket';
 
 /**
  * Generated class for the TicketsPage page.
@@ -22,15 +22,15 @@ export class TicketsPage {
   }
 
   goToTaxiTicket(){
-    this.navCtrl.push(TicketTaxie);
+    this.navCtrl.push(TickettaxiePage);
   }
 
   goToHotelTicket(){
-     this.navCtrl.push(TicketHotel);
+     this.navCtrl.push(TicketHotelPage);
   }
 
   goToRestaurantTicket(){
-     this.navCtrl.push(TicketRestaurant);
+     this.navCtrl.push(TicketPage);
   }
 
   ionViewDidLoad() {
