@@ -1,0 +1,88 @@
+[04-Apr-2017 13:41:41 America/Chicago] PHP Parse error:  syntax error, unexpected ';', expecting ',' or ')' in /home/gocodeops/public_html/healthy_do/api/leave.php on line 62
+[05-Apr-2017 22:19:10 America/Chicago] PHP Parse error:  syntax error, unexpected ';', expecting ',' or ')' in /home/gocodeops/public_html/healthy_do/api/leave.php on line 62
+[05-Apr-2017 22:20:39 America/Chicago] PHP Parse error:  syntax error, unexpected ';', expecting ',' or ')' in /home/gocodeops/public_html/healthy_do/api/leave.php on line 62
+[05-Apr-2017 22:20:59 America/Chicago] PHP Parse error:  syntax error, unexpected ';', expecting ',' or ')' in /home/gocodeops/public_html/healthy_do/api/leave.php on line 106
+[05-Apr-2017 22:21:16 America/Chicago] PHP Parse error:  syntax error, unexpected ';', expecting ',' or ')' in /home/gocodeops/public_html/healthy_do/api/specialist.php on line 65
+[05-Apr-2017 22:21:39 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on boolean in /home/gocodeops/public_html/healthy_do/api/users.php:35
+Stack trace:
+#0 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#1 /home/gocodeops/public_html/healthy_do/api/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(41): call_user_func(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 /home/gocodeops/public_html/healthy_do/api/vendor/slim/slim/Slim/Route.php(325): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 /home/gocodeops/public_html/healthy_do/api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(114): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#4 /home/gocodeops/public_html/healthy_do/api/vendor/slim/slim/Slim/Route.php(297): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 /home/goco in /home/gocodeops/public_html/healthy_do/api/users.php on line 35
+[06-Apr-2017 08:04:46 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on boolean in /home/gocodeops/public_html/healthy_do/api/specialist.php:13
+Stack trace:
+#0 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#1 /home/gocodeops/public_html/healthy_do/api/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(41): call_user_func(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 /home/gocodeops/public_html/healthy_do/api/vendor/slim/slim/Slim/Route.php(325): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 /home/gocodeops/public_html/healthy_do/api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(114): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#4 /home/gocodeops/public_html/healthy_do/api/vendor/slim/slim/Slim/Route.php(297): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 /home in /home/gocodeops/public_html/healthy_do/api/specialist.php on line 13
+[07-Apr-2017 18:36:06 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on boolean in /home/gocodeops/public_html/healthy_do/api/specialist.php:13
+Stack trace:
+#0 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#1 /home/gocodeops/public_html/healthy_do/api/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(41): call_user_func(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 /home/gocodeops/public_html/healthy_do/api/vendor/slim/slim/Slim/Route.php(325): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 /home/gocodeops/public_html/healthy_do/api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(114): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#4 /home/gocodeops/public_html/healthy_do/api/vendor/slim/slim/Slim/Route.php(297): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 /home in /home/gocodeops/public_html/healthy_do/api/specialist.php on line 13
+[14-Apr-2017 20:58:43 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gocodeops/public_html/healthy_do/api/vendor/slim/slim/Slim/App.php:394) in /home/gocodeops/public_html/healthy_do/api/index.php on line 45
+[14-Apr-2017 20:58:43 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gocodeops/public_html/healthy_do/api/vendor/slim/slim/Slim/App.php:394) in /home/gocodeops/public_html/healthy_do/api/index.php on line 46
+[14-Apr-2017 20:58:43 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gocodeops/public_html/healthy_do/api/vendor/slim/slim/Slim/App.php:394) in /home/gocodeops/public_html/healthy_do/api/index.php on line 47
+[14-Apr-2017 21:14:40 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on boolean in /home/gocodeops/public_html/healthy_do/api/specialist.php:13
+Stack trace:
+#0 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#1 /home/gocodeops/public_html/healthy_do/api/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(41): call_user_func(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 /home/gocodeops/public_html/healthy_do/api/vendor/slim/slim/Slim/Route.php(325): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 /home/gocodeops/public_html/healthy_do/api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(114): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#4 /home/gocodeops/public_html/healthy_do/api/vendor/slim/slim/Slim/Route.php(297): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 /home in /home/gocodeops/public_html/healthy_do/api/specialist.php on line 13
+[14-Apr-2017 21:21:11 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gocodeops/public_html/healthy_do/api/vendor/slim/slim/Slim/App.php:394) in /home/gocodeops/public_html/healthy_do/api/index.php on line 48
+[14-Apr-2017 21:21:31 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gocodeops/public_html/healthy_do/api/vendor/slim/slim/Slim/App.php:394) in /home/gocodeops/public_html/healthy_do/api/index.php on line 48
+[14-Apr-2017 21:21:38 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/gocodeops/public_html/healthy_do/api/vendor/slim/slim/Slim/App.php:394) in /home/gocodeops/public_html/healthy_do/api/index.php on line 48
+[15-Apr-2017 21:41:14 America/Chicago] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ')' in /home/gocodeops/public_html/healthy_do/api/users.php on line 20
+[15-Apr-2017 21:42:44 America/Chicago] PHP Fatal error:  Uncaught Error: Unsupported operand types in /home/gocodeops/public_html/healthy_do/api/users.php:19
+Stack trace:
+#0 [internal function]: Closure->{closure}(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#1 /home/gocodeops/public_html/healthy_do/api/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(41): call_user_func(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 /home/gocodeops/public_html/healthy_do/api/vendor/slim/slim/Slim/Route.php(325): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 /home/gocodeops/public_html/healthy_do/api/vendor/slim/slim/Slim/MiddlewareAwareTrait.php(114): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#4 /home/gocodeops/public_html/healthy_do/api/vendor/slim/slim/Slim/Route.php(297): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 /home/gocodeops/public_html/healthy in /home/gocodeops/public_html/healthy_do/api/users.php on line 19
+[18-Jun-2017 20:25:25 UTC] PHP Warning:  require(leave.php): failed to open stream: No such file or directory in /home/tes729sr/public_html/healthy_do/api/index.php on line 39
+[18-Jun-2017 20:25:25 UTC] PHP Warning:  require(leave.php): failed to open stream: No such file or directory in /home/tes729sr/public_html/healthy_do/api/index.php on line 39
+[18-Jun-2017 20:25:25 UTC] PHP Fatal error:  require(): Failed opening required 'leave.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/tes729sr/public_html/healthy_do/api/index.php on line 39
+[18-Jun-2017 20:25:27 UTC] PHP Warning:  require(leave.php): failed to open stream: No such file or directory in /home/tes729sr/public_html/healthy_do/api/index.php on line 39
+[18-Jun-2017 20:25:27 UTC] PHP Warning:  require(leave.php): failed to open stream: No such file or directory in /home/tes729sr/public_html/healthy_do/api/index.php on line 39
+[18-Jun-2017 20:25:27 UTC] PHP Fatal error:  require(): Failed opening required 'leave.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/tes729sr/public_html/healthy_do/api/index.php on line 39
+[18-Jun-2017 20:25:27 UTC] PHP Warning:  require(leave.php): failed to open stream: No such file or directory in /home/tes729sr/public_html/healthy_do/api/index.php on line 39
+[18-Jun-2017 20:25:27 UTC] PHP Warning:  require(leave.php): failed to open stream: No such file or directory in /home/tes729sr/public_html/healthy_do/api/index.php on line 39
+[18-Jun-2017 20:25:27 UTC] PHP Fatal error:  require(): Failed opening required 'leave.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/tes729sr/public_html/healthy_do/api/index.php on line 39
+[18-Jun-2017 20:25:54 UTC] PHP Warning:  require(leave.php): failed to open stream: No such file or directory in /home/tes729sr/public_html/healthy_do/api/index.php on line 39
+[18-Jun-2017 20:25:54 UTC] PHP Warning:  require(leave.php): failed to open stream: No such file or directory in /home/tes729sr/public_html/healthy_do/api/index.php on line 39
+[18-Jun-2017 20:25:54 UTC] PHP Fatal error:  require(): Failed opening required 'leave.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/tes729sr/public_html/healthy_do/api/index.php on line 39
+[18-Jun-2017 20:26:03 UTC] PHP Warning:  require(leave.php): failed to open stream: No such file or directory in /home/tes729sr/public_html/healthy_do/api/index.php on line 39
+[18-Jun-2017 20:26:03 UTC] PHP Warning:  require(leave.php): failed to open stream: No such file or directory in /home/tes729sr/public_html/healthy_do/api/index.php on line 39
+[18-Jun-2017 20:26:03 UTC] PHP Fatal error:  require(): Failed opening required 'leave.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/tes729sr/public_html/healthy_do/api/index.php on line 39
+[18-Jun-2017 20:26:33 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/tes729sr/public_html/healthy_do/api/specialist.php on line 10
+[18-Jun-2017 20:26:33 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on null in /home/tes729sr/public_html/healthy_do/api/specialist.php on line 13
+[18-Jun-2017 21:35:30 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on boolean in /home/tes729sr/public_html/healthy_do/api/specialist.php on line 34
+[18-Jun-2017 22:13:06 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on boolean in /home/tes729sr/public_html/healthy_do/api/users.php on line 64
+[18-Jun-2017 22:13:28 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on boolean in /home/tes729sr/public_html/healthy_do/api/users.php on line 64
+[21-Jun-2017 14:04:24 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on boolean in /home/tes729sr/public_html/healthy_do/api/appointments.php on line 85
+[21-Jun-2017 14:04:58 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on boolean in /home/tes729sr/public_html/healthy_do/api/appointments.php on line 85
+[24-Jun-2017 06:38:11 UTC] PHP Fatal error:  Using $this when not in object context in /home/tes729sr/public_html/canto/api/users.php on line 3
+[24-Jun-2017 06:39:44 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/tes729sr/public_html/canto/api/users.php on line 63
+[24-Jun-2017 06:42:20 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/tes729sr/public_html/canto/api/users.php on line 12
+[24-Jun-2017 06:42:20 UTC] PHP Warning:  mysqli_error(): Couldn't fetch mysqli in /home/tes729sr/public_html/canto/api/users.php on line 26
+[24-Jun-2017 08:29:47 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on boolean in /home/tes729sr/public_html/canto/api/restaurant_services.php on line 13
+[24-Jun-2017 08:30:04 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on boolean in /home/tes729sr/public_html/canto/api/restaurant_services.php on line 13
+[24-Jun-2017 08:30:24 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on boolean in /home/tes729sr/public_html/canto/api/hotel_services.php on line 13
+[24-Jun-2017 08:31:08 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on boolean in /home/tes729sr/public_html/canto/api/hotel_services.php on line 13
+[24-Jun-2017 11:26:59 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on boolean in /home/tes729sr/public_html/canto/api/restaurant_services.php on line 13
+[24-Jun-2017 11:27:06 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on boolean in /home/tes729sr/public_html/canto/api/restaurant_services.php on line 13
+[24-Jun-2017 11:28:37 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on boolean in /home/tes729sr/public_html/canto/api/restaurant_services.php on line 13
+[24-Jun-2017 11:33:27 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on boolean in /home/tes729sr/public_html/canto/api/hotel_services.php on line 31
+[24-Jun-2017 11:38:27 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on boolean in /home/tes729sr/public_html/canto/api/restaurant_services.php on line 13
+[24-Jun-2017 11:38:39 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on boolean in /home/tes729sr/public_html/canto/api/restaurant_services.php on line 13
