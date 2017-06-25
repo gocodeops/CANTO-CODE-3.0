@@ -2,23 +2,23 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the ServiceHotelPage page.
+ * Generated class for the TicketPage page.
  *
  * See http://ionicframework.com/docs/components/#navigation for more info
  * on Ionic pages and navigation.
  */
 @IonicPage()
 @Component({
-  selector: 'page-service-hotel',
-  templateUrl: 'service-hotel.html',
+  selector: 'page-ticket',
+  templateUrl: 'ticket.html',
 })
-export class ServiceHotelPage {
+export class TicketPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad ServiceHotelPage');
+    console.log('ionViewDidLoad TicketPage');
   }
 
 }
