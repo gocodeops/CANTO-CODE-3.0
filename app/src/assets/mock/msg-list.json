@@ -1,0 +1,14 @@
+{
+    "array": [{
+        "messageId": "1",
+        "userId": "210000198410281948",
+        "userName": "Hancock",
+        "userImgUrl": "./assets/to-user.jpg",
+        "toUserId": "140000198202211138",
+        "toUserName": "Luff",
+        "toUserImgUrl": "./assets/user.jpg",
+        "time": 1491034800000,
+        "message": "Hi my name is Senca, how may I be of service?",
+        "status": "success"
+    }]
+}
